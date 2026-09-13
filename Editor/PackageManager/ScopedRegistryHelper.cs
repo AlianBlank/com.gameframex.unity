@@ -29,7 +29,7 @@ namespace GameFrameX.Editor
             SetScopedRegistry(
                 "GameFrameX",
                 "https://gameframex.upm.alianblank.uk",
-                new[] { "com.gameframex" }
+                new[] { "com.gameframex.unity" }
             );
         }
 
@@ -127,7 +127,7 @@ namespace GameFrameX.Editor
                 return;
             }
 
-            SetScopedRegistry("GameFrameX", "https://gameframex.upm.alianblank.uk", new[] { "com.gameframex" });
+            SetScopedRegistry("GameFrameX", "https://gameframex.upm.alianblank.uk", new[] { "com.gameframex.unity" });
 
             string json = File.ReadAllText(ManifestPath);
             PackagesManifest manifest = LitJSON.Runtime.JsonMapper.ToObject<PackagesManifest>(json);
