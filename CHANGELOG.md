@@ -1,3 +1,10 @@
+## [2.5.4](https://github.com/gameframex/com.gameframex.unity/compare/2.5.3...2.5.4) (2026-09-13)
+
+
+### Bug Fixes
+
+* **editor:** Scoped Registry scope 同步收窄为 com.gameframex.unity ([ade5624](https://github.com/gameframex/com.gameframex.unity/commit/ade56245fea796f72ea816bc6e2f7e55d5841781))
+
 ## [2.5.3](https://github.com/gameframex/com.gameframex.unity/compare/2.5.2...2.5.3) (2026-08-29)
 
 
