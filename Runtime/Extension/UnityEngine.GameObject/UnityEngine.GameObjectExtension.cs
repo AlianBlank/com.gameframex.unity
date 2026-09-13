@@ -135,6 +135,16 @@ namespace GameFrameX.Runtime
         }
 
         /// <summary>
+        /// 递归设置游戏对象的层级（包含全部子物体）。
+        /// 兼容保留：等价于 <see cref="SetLayer(GameObject, int, bool)"/> 默认递归行为。
+        /// </summary>
+        /// <param name="gameObject">游戏对象</param>
+        /// <param name="layer">层</param>
+        [Preserve]
+        [Obsolete("已并入 SetLayer（默认递归），此别名计划于 3.0.0 移除")]
+        public static void SetLayerRecursively(this GameObject gameObject, int layer) => SetLayer(gameObject, layer);
+
+        /// <summary>
         /// 销毁子物体。
         /// </summary>
         /// <remarks>
